@@ -1,0 +1,296 @@
+*{
+    background-color: none;
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font:Verdana, Geneva, Tahoma, sans-serif ;
+    }
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(logosemfundo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*aqui começa a pagina de produtos*/
+.conteiner {
+    font-size: 2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 2rem;
+    gap: 100px;
+    padding-top: 10vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner .produto:hover {
+  transition:  .4s;
+  box-shadow: 0px 0px 20px 20px rgb(188, 198, 0);
+}
+
+.conteiner .produto {
+    border-radius: 2rem;
+    text-shadow: 0.2em 0.1em 0.5em black;
+    width: 300px;
+    background:white;
+    /* padding: 20px; */
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.conteiner .produto img {
+    width: 280px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.conteiner .produto p {
+  text-shadow: 0.1em 0.1em 0.2em black;
+  color:black;
+}
+
+.conteiner .produto .img .produto-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.8s linear;
+}
+/*aqui termina a pagina de produtos*/
+a {
+    color:white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    background-color: rgb(255, 189, 21);
+    color: rgb(0, 0, 0);
+    transition: background .4s;
+    opacity:0.7;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: serif;
+    background: #031600;
+    height: 10vh;
+}
+
+main {
+
+    background-size: cover;
+    height: 92vh;
+}
+.menu-h {
+    display: inline;
+    list-style: none;
+    display: flex;
+}
+.menu-h li a{
+    padding: 20px;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-left: 30px;
+}
+.logo {
+    margin-top: 150px;
+}
+.btn {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 300px;
+    border-radius: 1rem;
+    text-align: center;
+    place-self: center;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border:solid rgb(126, 108, 0);
+    color: rgb(126, 108, 0);
+    text-decoration: none;
+}
+.btn:hover {
+    animation: btn-animacao 1s ease-out forwards infinite;
+}
+
+@keyframes btn-animacao {
+    0% {
+        transform: translatey(0px);
+        box-shadow: 0px 0px 0px grey;
+    }
+    25%{
+        transform: translatey(-20px);
+        box-shadow: 0px 5px 0px grey;
+    }
+    50%{
+        transform: translatey(20px);
+        box-shadow: 0px -5px 0px grey;
+    }
+    100%{
+        transform: translatey(0px);
+        box-shadow: 0px 0px 0px grey;
+    }
+}
+
+:root {
+    --background-cor: #3838b1;
+    --cor-padrao: #fff;
+    --cor-input: black;
+    --cor-texto: rgb(207, 190, 0);
+    --cor-borda: #20235b;
+    --cor-verde: rgb(255, 247, 0);
+  }
+  
+  
+  body {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-cor);
+    color: var(--cor-padrao);
+  }
+  
+  section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 440px;
+    padding: 20px;
+  }
+
+  .foto-inicio {
+    background-color: brown;
+    width: 250px;
+    height: 250px;
+  }
+  
+  h1 {
+    text-shadow: 0.2em 0.1em 0.5em black;
+    font-size: 35px;
+  }
+  
+  h5 {
+    font-size: 15px;
+  }
+  
+  .caixa-linha {
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .caixa-linha label {
+    text-shadow: 0.2em 0.1em 0.1em black;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: var(--cor-texto);
+  }
+  
+  .caixa-linha input {
+    color: var(--cor-input);
+    background-color: none;
+    border: 2px solid var(--cor-borda);
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  .caixa-linha input:focus {
+    border-color: var(--cor-verde);
+  }
+  
+  .caixa-linha input:disabled {
+    background-color: #494a7d;
+  }
+  
+  .caixa-botoes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  button {
+    height: 50px;
+    width: 100px;
+    background-color: var(--cor-verde);
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+
+  .texto {
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-family:Bebás Neue;
+    color: rgb(255, 255, 127);
+    width: 800px;
+    height: 100px;
+    margin-left: 25px;
+    margin-top:  130px;
+    font-size:smaller;
+    align-items:normal ;
+  }
+
+  .texto h1 {
+    
+    text-shadow: 0.2em 0.1em 0.5em black;
+    color: black;
+    font-size: 70px;
+    padding: 15px;
+  }
+
+.img-equipe{
+  align-items:safe;
+  margin-left: 700px;
+}
+
+.imgtkd {
+  margin-top: 300px;
+  border: 1px solid black;
+  display: block;
+  width:502px;
+  height:380px;
+  box-shadow: 0 0 0px #aaa;
+  margin-left: 760px;
+  padding: 1px 1px 0 1px;
+  vertical-align: top;
+  transition: height 1s;
+}
+
+.imgtkd .img2 {
+  border-radius: 3rem;
+}
+.img-equipe{
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  border-radius: 2rem;
+  border: 1px solid gold;
+  border-radius: 4px;
+  padding: 5px;
+  width: 731px;
+}
+.img-equipe:hover {
+  box-shadow: 0 0 50px 1px rgba(219, 227, 0, 0.947);
+}
+.menuzinho {
+  lef
+  background:red;
+  width: 50%;
+  height: 250px;
+}
+#limenuzinho {
+  list-style-type: none;
+  color: #000000;
+  padding: 60px;
+  display: block;
+  text-decoration: none;
+  transition: background .3s;
+  text-transform: uppercase;
+}

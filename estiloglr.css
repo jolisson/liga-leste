@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin-top: 20px;
+    background-color: rgb(18, 0, 0);
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+}
+
+section {
+    column-count: 3;
+    column-gap: 10px;
+}
